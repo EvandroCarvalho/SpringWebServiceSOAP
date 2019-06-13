@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb" if-exists="true" version="2.1">
+  <!--
+
+Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.3.0 
+Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
+Gerado em: 2019.06.13 às 01:54:41 PM BRT 
+
+  -->
+  <bindings xmlns:tns="http://spring.io/guides/gs-producing-web-service" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="com.springWebServiceConsumer.wsdl"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="tns:getCountryRequest">
+      <class ref="com.springWebServiceConsumer.wsdl.GetCountryRequest"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:getCountryResponse">
+      <class ref="com.springWebServiceConsumer.wsdl.GetCountryResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:country">
+      <class ref="com.springWebServiceConsumer.wsdl.Country"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:currency">
+      <typesafeEnumClass ref="com.springWebServiceConsumer.wsdl.Currency"/>
+    </bindings>
+  </bindings>
+</bindings>
